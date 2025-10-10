@@ -14,7 +14,7 @@ url:'https://github.com/Diishita/git-assignment-.git'
 }
 stage('Compile Java Code'){
 steps{
-sh 'javac $(find.-name"*.java")'
+bat 'javac $(find.-name"*.java")'
 }
 }
 }
@@ -26,4 +26,5 @@ success{
 echo 'Pipeline succeeded'
 }
 }
+
 }
